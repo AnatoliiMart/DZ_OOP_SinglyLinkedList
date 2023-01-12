@@ -74,7 +74,6 @@ void List<T>::AddToBegin(T data)
 		temp->data = data;
 		temp->pNext = nullptr;
 		pHead = pTail = temp;
-		return;
 	}
 	temp->data = data;
 	temp->pNext = pHead;
@@ -160,7 +159,7 @@ int main()
 	lst.Del();
 	lst.Del();
 	lst.Del();
-	lst.AddToBegin('s');
+	lst.AddToBegin('L');
 	//Распечатываем содержимое списка
 	lst.Print();
 }
